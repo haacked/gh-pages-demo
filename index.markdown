@@ -39,7 +39,7 @@ The code for generating that list is:
 <h2>Repositories</h2>
 <p>This is a list of my public repositories</p>
 <div>
-  {% for repository in site.github.owner_repositories %}
+  {% for repository in site.github.public_repositories %}
     <span>{{ repository.full_name }} </span>
   {% endfor %}
 </div>
@@ -47,7 +47,7 @@ The code for generating that list is:
 ```jekyll
 {% raw %}
 <div>
-  {% for repository in site.github.owner_repositories %}
+  {% for repository in site.github.public_repositories %}
     <span>{{ repository.full_name }} </span>
   {% endfor %}
 </div>
