@@ -1,0 +1,20 @@
+---
+layout: nil
+---
+
+<html>
+<head>
+    <title>Haacked's GitHub Pages Demo</title>
+</head>
+<body>    
+
+<h2>Contributors</h2>
+<p>These lovely people have contributed a change to this repository</p>
+<ul>
+{% for contributor in site.github.contributors %}
+  <li>
+    <img src="{{ contributor.avatar_url }}" /> {{ contributor.login }}
+  </li>
+{% endfor %}
+</body>
+</html>
