@@ -3,16 +3,15 @@ layout: default
 ---
 
 
-<h1>{{ site.github.project_tagline }}</h1>
+# {{ site.github.project_tagline }}
 
-<p>
-    This is a demonstration of some of the cool integrations with GitHub that
-    GitHub Pages provides.
-</p>
-<p>
-  For example, that heading comes from the GitHub repository this demo is
-  hosted within.
-</p>
+This is a demonstration of some of the cool integrations with GitHub that
+GitHub Pages provides.
+
+For example, that heading comes from the GitHub repository this demo is
+hosted within.
+
+The repository this demo is hosted in is [{{ site.github.repository_url}}]({{ site.github.repository_url}})
 
 ```
 {% raw %}
