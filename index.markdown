@@ -20,7 +20,7 @@ The repository this demo is hosted in is [{{ site.github.repository_url}}]({{ si
 
 ## Contributors
 
-These lovely people have contributed a change to this repository. If you want to see yourself in this list, [send me a pull request]({{ site.github.repository_url}})!
+These lovely people have contributed a change to this repository. If you want to see yourself in this list, send me a pull request. Go to the bottom for a real simple way to help.
 
 <ul>
 {% for contributor in site.github.contributors %}
@@ -87,3 +87,14 @@ This is a list of the members of my "organization". This is probably just me.
 </ul>
 {% endraw %}
 ```
+
+## Help me fix this page up
+
+### CSS Help
+If you want to see yourself in this list I could use some help throwing some [simple CSS styles in the default layout]({{ site.github.repository_url}}/edit/gh-pages/_layouts/default.html).
+
+Just click that link to edit the layout right in your browser.
+
+### Bug in this page?
+
+To fix a bug in this page [click this edit link]({{ site.github.repository_url}}/edit/gh-pages/index.markdown).
