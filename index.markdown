@@ -36,20 +36,3 @@ The code for generating that list is:
 {% endraw %}
 ```
 
-<h2>Repositories</h2>
-<p>This is a list of my public repositories</p>
-<div>
-  {% for repository in site.github.public_repositories %}
-    <span>{{ repository.full_name }} </span>
-  {% endfor %}
-</div>
-
-```jekyll
-{% raw %}
-<div>
-  {% for repository in site.github.public_repositories %}
-    <span>{{ repository.full_name }} </span>
-  {% endfor %}
-</div>
-{% endraw %}
-```
