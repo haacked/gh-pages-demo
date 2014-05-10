@@ -63,3 +63,25 @@ The code for generating that list is:
 </div>
 {% endraw %}
 ```
+
+<h2>Members</h2>
+<p>This is a list of the members of my "organization". This is probably just me.</p>
+<ul>
+{% for member in site.github.organization_members %}
+  <li>
+    <img src="{{ member.avatar_url }}" width="32" height="32" /> {{ member.login }}
+  </li>
+{% endfor %}
+</ul>
+
+```
+{% raw %}
+<ul>
+{% for member in site.github.organization_members %}
+  <li>
+    <img src="{{ member.avatar_url }}" width="32" height="32" /> {{ member.login }}
+  </li>
+{% endfor %}
+</ul>
+{% endraw %}
+```
