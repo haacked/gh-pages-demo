@@ -24,7 +24,7 @@ layout: default
 The code for generating that list is:
 </p>
 
-```jekyll
+```
 {% raw %}
 <ul>
 {% for contributor in site.github.contributors %}
@@ -36,3 +36,20 @@ The code for generating that list is:
 {% endraw %}
 ```
 
+<h2>Repositories</h2>
+<p>This is a list of my public repositories</p>
+<div>
+  {% for repository in site.github.public_repositories %}
+    <span>{{ repository.full_name }} </span>
+  {% endfor %}
+</div>
+
+```
+{% raw %}
+<div>
+  {% for repository in site.github.public_repositories %}
+    <span>{{ repository.full_name }} </span>
+  {% endfor %}
+</div>
+{% endraw %}
+```
