@@ -1,17 +1,7 @@
 ---
-layout: nil
+layout: default
 ---
 
-<html>
-<head>
-    <title>Haacked's GitHub Pages Demo</title>
-    <style>
-        font-family: helvetica, calibri, arial;
-    </style>
-</head>
-<body>
-
-<div>
 
 <h1>{{ site.github.project_tagline }}</h1>
 
@@ -57,6 +47,3 @@ The code for generating that list is:
 {% endfor %}
 </ul>
 
-</div>
-</body>
-</html>
