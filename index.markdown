@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 # {{ site.github.project_tagline }}
 
 This is a demonstration of some of the cool integrations with GitHub that
@@ -11,16 +10,18 @@ GitHub Pages provides.
 For example, that heading comes from the GitHub repository this demo is
 hosted within.
 
-The repository this demo is hosted in is [{{ site.github.repository_url}}]({{ site.github.repository_url}})
-
 ```
 {% raw %}
 <h1>{{ site.github.project_tagline }}</h1>
 {% endraw %}
 ```
 
-<h2>Contributors</h2>
-<p>These lovely people have contributed a change to this repository</p>
+The repository this demo is hosted in is [{{ site.github.repository_url}}]({{ site.github.repository_url}})
+
+## Contributors
+
+These lovely people have contributed a change to this repository. If you want to see yourself in this list, [send me a pull request]({{ site.github.repository_url}})!
+
 <ul>
 {% for contributor in site.github.contributors %}
   <li>
@@ -29,9 +30,7 @@ The repository this demo is hosted in is [{{ site.github.repository_url}}]({{ si
 {% endfor %}
 </ul>
 
-<p>
 The code for generating that list is:
-</p>
 
 ```
 {% raw %}
@@ -45,8 +44,10 @@ The code for generating that list is:
 {% endraw %}
 ```
 
-<h2>Repositories</h2>
-<p>This is a list of my public repositories</p>
+## Repositories
+
+This is a list of my public repositories
+
 <div>
   {% for repository in site.github.public_repositories %}
     <span>{{ repository.full_name }} </span>
@@ -63,8 +64,10 @@ The code for generating that list is:
 {% endraw %}
 ```
 
-<h2>Members</h2>
-<p>This is a list of the members of my "organization". This is probably just me.</p>
+## Members
+
+This is a list of the members of my "organization". This is probably just me.
+
 <ul>
 {% for member in site.github.organization_members %}
   <li>
