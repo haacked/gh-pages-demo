@@ -9,6 +9,16 @@ layout: default
     This is a demonstration of some of the cool integrations with GitHub that
     GitHub Pages provides.
 </p>
+<p>
+  For example, that heading comes from the GitHub repository this demo is
+  hosted within.
+</p>
+
+```
+{% raw %}
+<h1>{{ site.github.project_tagline }}</h1>
+{% endraw %}
+```
 
 <h2>Contributors</h2>
 <p>These lovely people have contributed a change to this repository</p>
