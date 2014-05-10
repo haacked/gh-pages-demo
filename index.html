@@ -30,6 +30,23 @@ layout: nil
 {% endfor %}
 </ul>
 
+<p>
+The code for generating that list is:
+</p>
+
+```
+{% raw %}
+<ul>
+{% for contributor in site.github.contributors %}
+  <li>
+    <img src="{{ contributor.avatar_url }}" width="32" height="32" /> {{ contributor.login }}
+  </li>
+{% endfor %}
+</ul>
+{% endraw %}
+```
+
+
 <h2>Repositories</h2>
 <p>This is a list of my public repositories</p>
 <ul>
