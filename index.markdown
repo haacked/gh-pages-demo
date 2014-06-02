@@ -48,19 +48,19 @@ The code for generating that list is:
 
 This is a list of my public repositories
 
-<div>
-  {% for repository in site.github.public_repositories %}
-    <span>{{ repository.full_name }} </span>
-  {% endfor %}
-</div>
+  <ul>
+    {% for repository in site.github.public_repositories %}
+      <li>{{ repository.full_name }} </li>
+    {% endfor %}
+  </ul>
 
 ```
 {% raw %}
-<div>
-  {% for repository in site.github.public_repositories %}
-    <span>{{ repository.full_name }} </span>
-  {% endfor %}
-</div>
+  <ul>
+    {% for repository in site.github.public_repositories %}
+      <li>{{ repository.full_name }} </li>
+    {% endfor %}
+  </ul>
 {% endraw %}
 ```
 
