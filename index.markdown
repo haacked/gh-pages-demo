@@ -58,7 +58,7 @@ This is a list of my public repositories
 {% raw %}
 <div>
   {% for repository in site.github.public_repositories %}
-    <span>{{ repository.full_name }} </span>
+    <div>{{ repository.full_name }} </div>
   {% endfor %}
 </div>
 {% endraw %}
