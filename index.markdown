@@ -90,7 +90,7 @@ This is a list of the members of my "organization". This is probably just me.
 
 ## Theme
 
-GitHub Pages now support specifying themes outside of your repository. For example, you can use one of GitHub's pre-built themes by entering the following in `_config.yml`
+GitHub Pages now support specifying themes outside of your repository. For example, you can use one of GitHub's pre-built themes by entering the following in [`_config.yml`](https://github.com/Haacked/gh-pages-demo/blob/gh-pages/_config.yml)
 
 ```
 theme: minima
