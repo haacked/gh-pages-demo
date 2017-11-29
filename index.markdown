@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# {{ site.github.project_tagline }}
+{{ site.github.project_tagline }}
 
 This is a demonstration of some of the cool integrations with GitHub that
 GitHub Pages provides.
@@ -48,19 +48,19 @@ The code for generating that list is:
 
 This is a list of my public repositories
 
-<div>
+<ul>
   {% for repository in site.github.public_repositories %}
-    <span>{{ repository.full_name }} </span>
+    <li>{{ repository.full_name }} </li>
   {% endfor %}
-</div>
+</ul>
 
 ```
 {% raw %}
-<div>
+<ul>
   {% for repository in site.github.public_repositories %}
-    <span>{{ repository.full_name }} </span>
+    <li>{{ repository.full_name }} </li>
   {% endfor %}
-</div>
+</li>
 {% endraw %}
 ```
 
@@ -88,12 +88,15 @@ This is a list of the members of my "organization". This is probably just me.
 {% endraw %}
 ```
 
-## Help me fix this page up
+## Theme
 
-### CSS Help
-If you want to see yourself in this list I could use some help throwing some [simple CSS styles in the default layout]({{ site.github.repository_url}}/edit/gh-pages/_layouts/default.html).
+GitHub Pages now support specifying themes outside of your repository. For example, you can use one of GitHub's pre-built themes by entering the following in [`_config.yml`](https://github.com/Haacked/gh-pages-demo/blob/gh-pages/_config.yml)
 
-Just click that link to edit the layout right in your browser.
+```
+theme: minima
+```
+
+GitHub Pages also supports specifying another repository as the theme for your site. See the [documentation for more information](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/).
 
 ### Bug in this page?
 

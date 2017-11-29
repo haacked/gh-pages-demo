@@ -1,6 +1,15 @@
-#
-# Jekyll Settings
-#
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables"]
+title: Haacked's GitHub Pages Demo
+author: haacked
+description: >
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+twitter_username: haacked
+github_username:  haacked
+
+markdown: kramdown
+theme: minima
+exclude:
+  - Gemfile
+  - Gemfile.lock
