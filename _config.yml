@@ -1,6 +1,5 @@
 #
 # Jekyll Settings
 #
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables"]
+markdown: kramdown
+theme: minima
