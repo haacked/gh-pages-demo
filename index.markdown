@@ -88,12 +88,15 @@ This is a list of the members of my "organization". This is probably just me.
 {% endraw %}
 ```
 
-## Help me fix this page up
+## Theme
 
-### CSS Help
-If you want to see yourself in this list I could use some help throwing some [simple CSS styles in the default layout]({{ site.github.repository_url}}/edit/gh-pages/_layouts/default.html).
+GitHub Pages now support specifying themes outside of your repository. For example, you can use one of GitHub's pre-built themes by entering the following in `_config.yml`
 
-Just click that link to edit the layout right in your browser.
+```
+theme: minima
+```
+
+GitHub Pages also supports specifying another repository as the theme for your site. See the [documentation for more information](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/).
 
 ### Bug in this page?
 
