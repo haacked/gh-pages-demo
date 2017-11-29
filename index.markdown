@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# {{ site.github.project_tagline }}
+{{ site.github.project_tagline }}
 
 This is a demonstration of some of the cool integrations with GitHub that
 GitHub Pages provides.
@@ -48,19 +48,19 @@ The code for generating that list is:
 
 This is a list of my public repositories
 
-<div>
+<ul>
   {% for repository in site.github.public_repositories %}
-    <span>{{ repository.full_name }} </span>
+    <li>{{ repository.full_name }} </li>
   {% endfor %}
-</div>
+</ul>
 
 ```
 {% raw %}
-<div>
+<ul>
   {% for repository in site.github.public_repositories %}
-    <span>{{ repository.full_name }} </span>
+    <li>{{ repository.full_name }} </li>
   {% endfor %}
-</div>
+</li>
 {% endraw %}
 ```
 
