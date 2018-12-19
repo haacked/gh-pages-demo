@@ -52,7 +52,7 @@ This is a list of my public repositories
 
 <ul>
   {% for repository in site.github.public_repositories %}
-    <li>[{{ repository.full_name }}]({{ repository.html_url }}) </li>
+    <li><a href="{{ repository.html_url }}">{{ repository.full_name }}</a></li>
   {% endfor %}
 </ul>
 
@@ -60,7 +60,7 @@ This is a list of my public repositories
 {% raw %}
 <ul>
   {% for repository in site.github.public_repositories %}
-    <li>[{{ repository.full_name }}]({{ repository.html_url }}) </li>
+    <li><a href="{{ repository.html_url }}">{{ repository.full_name }}</a></li>
   {% endfor %}
 </li>
 {% endraw %}
