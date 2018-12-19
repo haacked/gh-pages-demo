@@ -25,7 +25,7 @@ These lovely people have contributed a change to this repository. If you want to
 <ul>
 {% for contributor in site.github.contributors %}
   <li>
-    <img src="{{ contributor.avatar_url }}" width="32" height="32" /> {{ contributor.login }}
+    <img src="{{ contributor.avatar_url }}" width="32" height="32" /> [{{ contributor.login }}]({{ contributor.html_url }})
   </li>
 {% endfor %}
 </ul>
@@ -37,7 +37,7 @@ The code for generating that list is:
 <ul>
 {% for contributor in site.github.contributors %}
   <li>
-    <img src="{{ contributor.avatar_url }}" width="32" height="32" /> {{ contributor.login }}
+    <img src="{{ contributor.avatar_url }}" width="32" height="32" /> [{{ contributor.login }}]({{ contributor.html_url }})
   </li>
 {% endfor %}
 </ul>
@@ -50,7 +50,7 @@ This is a list of my public repositories
 
 <ul>
   {% for repository in site.github.public_repositories %}
-    <li>{{ repository.full_name }} </li>
+    <li>[{{ repository.full_name }}]({{ repository.html_url }}) </li>
   {% endfor %}
 </ul>
 
@@ -58,7 +58,7 @@ This is a list of my public repositories
 {% raw %}
 <ul>
   {% for repository in site.github.public_repositories %}
-    <li>{{ repository.full_name }} </li>
+    <li>[{{ repository.full_name }}]({{ repository.html_url }}) </li>
   {% endfor %}
 </li>
 {% endraw %}
