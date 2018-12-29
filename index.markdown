@@ -22,8 +22,9 @@ The repository this demo is hosted in is [{{ site.github.repository_url}}]({{ si
 
 These lovely people have contributed a change to this repository. If you want to see yourself in this list, send me a pull request. Go to the bottom for a real simple way to help.
 
-TEST3: {{ site.github.contributors.size }}
-TEST2: {{ site.github.contributors.count }}
+* TEST1: {{ site.github.contributors.size }}
+* TEST2: {{ site.github.contributors.count }}
+* TEST3: {{ site.github.contributors.length }}
 
 <ul>
 {% for contributor in site.github.contributors %}
